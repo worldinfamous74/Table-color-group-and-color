@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table & color</title>
+</head>
+<style>
+    th, td{
+        padding: 0.5rem;
+        text-align: left;
+        border: 1px solid #2C3E5060;
+    }
+
+    .ticker-col{
+        background: #d8930896;
+    }
+
+    .min-price-col{
+        background: #FF898330;
+    }
+
+    .max-price-col{
+        background: #AAEC8A30;
+    }
+</style>
+<body>
+    <table>
+        <colgroup>
+            <col span="2"
+                class="ticker-col"
+            >
+            <col class="min-price-col">
+            <col class="max-price-col">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Ticker</th>
+                <th>Day's Low[$]</th>
+                <th>Day's High [$]</th>
+            </tr>
+        </thead>
+    
+    
+        <!--The Body Section-->
+        <tbody>
+            <tr>
+                <td rowspan="2">
+                    09/12/2024
+                </td>
+                <td>TSLA</td>
+                <td>239.27</td>
+                <td>244.27</td>
+            </tr>
+
+            <tr>
+                <td>OXY</td>
+                <td>56.33</td>
+                <td>56.95</td>
+            </tr>
+        </tbody>       
+    </table>
+</body>
+</html>
